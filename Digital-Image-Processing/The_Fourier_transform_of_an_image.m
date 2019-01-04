@@ -2,13 +2,13 @@ close all;
 clear; 
 clc; 
 im = imread('file:///C:/Users/Dinosaur/a.jpg'); %read the image
-im = double(rgb2gray(im))/255; %
-IM = fft2(im);
-IM_sh = fftshift(IM); 
-mod = abs(IM_sh);
-mod_log = log(1+mod); 
-phase = angle(IM_sh); 
-im_inverse = real(ifft2(ifftshift(IM_sh)));
+im = double(rgb2gray(im))/255; %change the type of valures to double
+IM = fft2(im); % fft2 for make the fourier transform to Imaginare of the number complexe
+IM_sh = fftshift(IM); %rearranges a Fourier transform IM by shifting the zero-frequency component to the center of the array.
+mod = abs(IM_sh);% mod=|IM_sh|
+mod_log = log(1+mod);  % log of 1+|IM_sh|
+phase = angle(IM_sh);  % the phase is angle of IM_sh
+im_inverse = real(ifft2(ifftshift(IM_sh))); %the im_inverse is the real of the number complex
 
 %visualisation 
 figure; 
