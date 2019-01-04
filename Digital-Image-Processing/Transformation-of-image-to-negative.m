@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
  
-im=imread('file:///C:/Users/Dinosaur/a.jpg');  %read the image to marix im
+im=imread('file:///C:/Users/walidamriou/a.jpg');  %read the image to marix im
 
 X=rgb2gray(im); % Image RGB to image gray to X 
 [m n]=size(X); %get the valures of image size 3027x4541 to m x n 
