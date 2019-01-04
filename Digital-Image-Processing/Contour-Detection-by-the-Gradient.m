@@ -1,7 +1,7 @@
 close all; 
 clear; 
 clc; 
-I = imread('file:///C:/Users/Dinosaur/b.jpeg');
+I = imread('file:///C:/Users/walidamriou/b.jpeg');
 I2=rgb2gray(I);
 c1=edge(I2,'roberts');
 c2=edge(I2,'sobel');
