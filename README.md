@@ -1,4 +1,4 @@
-# Matlab-projects
+# Matlab projects
  this is a projects with Matlab like image processing, Signal Processing, ... 
  
  *Digital Image Processing
